@@ -10,7 +10,7 @@ Some programs/protocols only work over UDP. And some networks only allow TCP. Th
   This part can be easily used as both a library and a binary.
   So it can be run standalone, but can also easily be included in other
   Rust programs. The UDP socket is connected to the peer address of the first incoming
-  datagram. So one [`Udp2Tcp`] instance can handle traffic from a single peer only.
+  datagram. So one [`Udp2Tcp`] instance can handle traffic rom a single peer only.
 * `tcp2udp` - Accepts connections over TCP and translates + forwards the incoming stream
   as UDP datagrams to the destination specified during setup / on the command line.
   Designed mostly to be a standalone executable to run on servers. But can be
